@@ -58,67 +58,30 @@ function draw()
 
   // character's hair
   fill(0);
-  rect(
-    gameChar_x - 12,
-    gameChar_y - 63,
-    24,
-    30
-  );
+  rect(gameChar_x - 12, gameChar_y - 63, 24, 30);
 
   // character's legs
   push();
   stroke(222, 184, 135);
   strokeWeight(4);
-  line(
-    gameChar_x - 5,
-    gameChar_y - 20,
-    gameChar_x - 5,
-    gameChar_y - 2
-  );
-
-  line(
-    gameChar_x + 5,
-    gameChar_y - 20,
-    gameChar_x + 5,
-    gameChar_y - 2
-  );
+  line(gameChar_x - 5, gameChar_y - 20, gameChar_x - 5, gameChar_y - 2);
+  line(gameChar_x + 5, gameChar_y - 20, gameChar_x + 5, gameChar_y - 2);
 
   // character's arms
-  line(
-    gameChar_x - 15,
-    gameChar_y - 25,
-    gameChar_x - 4,
-    gameChar_y - 35
-  );
-
-  line(
-    gameChar_x + 15,
-    gameChar_y - 25,
-    gameChar_x + 4,
-    gameChar_y - 35);
-
-
+  line(gameChar_x - 15, gameChar_y - 25, gameChar_x - 4, gameChar_y - 35);
+  line(gameChar_x + 15, gameChar_y - 25, gameChar_x + 4, gameChar_y - 35);
   pop();
 
   // character's body
   fill(139, 0, 0);
   triangle(
-    gameChar_x,
-    gameChar_y - 45,
-    gameChar_x + 15,
-    gameChar_y - 15,
-    gameChar_x - 15,
-    gameChar_y - 15
-  );
+    gameChar_x, gameChar_y - 45,
+    gameChar_x + 15, gameChar_y - 15,
+    gameChar_x - 15, gameChar_y - 15);
 
   // character's head
   fill(222, 184, 135);
-  ellipse(
-    gameChar_x,
-    gameChar_y - 50,
-    22,
-    22
-  );
+  ellipse(gameChar_x, gameChar_y - 50, 22, 22);
 
 	//Jumping facing forwards
 	stroke(100);
@@ -134,67 +97,30 @@ function draw()
 
   // character's hair
   fill(0);
-  rect(
-    gameChar_x - 12,
-    gameChar_y - 73,
-    24,
-    30
-  );
+  rect(gameChar_x - 12, gameChar_y - 73, 24, 30);
 
   // character's legs
   push();
   stroke(222, 184, 135);
   strokeWeight(4);
-  line(
-    gameChar_x - 5,
-    gameChar_y - 30,
-    gameChar_x - 5,
-    gameChar_y - 12
-  );
-
-  line(
-    gameChar_x + 5,
-    gameChar_y - 30,
-    gameChar_x + 5,
-    gameChar_y - 12
-  );
+  line(gameChar_x - 5, gameChar_y - 30, gameChar_x - 5, gameChar_y - 12);
+  line(gameChar_x + 5, gameChar_y - 30, gameChar_x + 5, gameChar_y - 12);
 
   // character's arms
-  line(
-    gameChar_x - 15,
-    gameChar_y - 50,
-    gameChar_x - 4,
-    gameChar_y - 45
-  );
-
-  line(
-    gameChar_x + 15,
-    gameChar_y - 50,
-    gameChar_x + 4,
-    gameChar_y - 45);
-
-
+  line(gameChar_x - 15, gameChar_y - 50, gameChar_x - 4, gameChar_y - 45);
+  line(gameChar_x + 15, gameChar_y - 50, gameChar_x + 4, gameChar_y - 45);
   pop();
 
   // character's body
   fill(139, 0, 0);
   triangle(
-    gameChar_x,
-    gameChar_y - 55,
-    gameChar_x + 15,
-    gameChar_y - 25,
-    gameChar_x - 15,
-    gameChar_y - 25
-  );
+    gameChar_x, gameChar_y - 55,
+    gameChar_x + 15, gameChar_y - 25,
+    gameChar_x - 15, gameChar_y - 25);
 
   // character's head
   fill(222, 184, 135);
-  ellipse(
-    gameChar_x,
-    gameChar_y - 60,
-    22,
-    22
-  );
+  ellipse(gameChar_x, gameChar_y - 60, 22, 22);
 
 	//Walking, turned left
 	stroke(100);
@@ -210,74 +136,36 @@ function draw()
 
   // character's hair
 	fill(0);
-	rect(
-	  gameChar_x - 12,
-	  gameChar_y - 63,
-	  24,
-	  30
-	);
+	rect(gameChar_x - 12, gameChar_y - 63, 24, 30);
 
 	// character's legs
 	push();
 	stroke(222, 184, 135);
 	strokeWeight(4);
-	line(
-	  gameChar_x - 5,
-	  gameChar_y - 20,
-	  gameChar_x - 9,
-	  gameChar_y - 2
-	);
-
-	line(
-	  gameChar_x + 5,
-	  gameChar_y - 20,
-	  gameChar_x + 1,
-	  gameChar_y - 2
-	);
+	line(gameChar_x - 5, gameChar_y - 20, gameChar_x - 9, gameChar_y - 2);
+	line(gameChar_x + 5, gameChar_y - 20, gameChar_x + 1, gameChar_y - 2);
 
 	// character's right arm
-	line(
-	  gameChar_x - 15,
-	  gameChar_y - 25,
-	  gameChar_x - 4,
-	  gameChar_y - 35
-	);
-
+	line(gameChar_x - 15, gameChar_y - 25, gameChar_x - 4, gameChar_y - 35);
 	pop();
 
 	// character's body
 	fill(139, 0, 0);
 	triangle(
-	  gameChar_x,
-	  gameChar_y - 45,
-	  gameChar_x + 15,
-	  gameChar_y - 15,
-	  gameChar_x - 15,
-	  gameChar_y - 15
-	);
+	  gameChar_x, gameChar_y - 45,
+	  gameChar_x + 15, gameChar_y - 15,
+	  gameChar_x - 15, gameChar_y - 15);
 
   // character's left arm
-
   push();
 	stroke(222, 184, 135);
 	strokeWeight(4);
-
-  line(
-	  gameChar_x - 4,
-	  gameChar_y - 25,
-	  gameChar_x + 4,
-	  gameChar_y - 35);
-
+  line(gameChar_x - 4, gameChar_y - 25, gameChar_x + 4, gameChar_y - 35);
   pop();
 
 	// character's head
 	fill(222, 184, 135);
-	ellipse(
-	  gameChar_x,
-	  gameChar_y - 50,
-	  22,
-	  22
-	);
+	ellipse(gameChar_x, gameChar_y - 50, 22, 22);
 
 
 	//Walking, turned right
@@ -294,71 +182,36 @@ function draw()
 
   // character's hair
   fill(0);
-  rect(
-    gameChar_x - 12,
-    gameChar_y - 63,
-    24,
-    30
-  );
+  rect(gameChar_x - 12, gameChar_y - 63, 24, 30);
 
   // character's legs
   push();
   stroke(222, 184, 135);
   strokeWeight(4);
-  line(
-    gameChar_x - 5,
-    gameChar_y - 20,
-    gameChar_x - 1,
-    gameChar_y - 2
-  );
-
-  line(
-    gameChar_x + 5,
-    gameChar_y - 20,
-    gameChar_x + 9,
-    gameChar_y - 2
-  );
+  line(gameChar_x - 5, gameChar_y - 20, gameChar_x - 1, gameChar_y - 2);
+  line(gameChar_x + 5, gameChar_y - 20, gameChar_x + 9, gameChar_y - 2);
 
   // character's right arm
-  line(
-    gameChar_x + 15,
-    gameChar_y - 25,
-    gameChar_x + 4,
-    gameChar_y - 35);
-
+  line(gameChar_x + 15, gameChar_y - 25, gameChar_x + 4, gameChar_y - 35);
   pop();
 
   // character's body
   fill(139, 0, 0);
   triangle(
-    gameChar_x,
-    gameChar_y - 45,
-    gameChar_x + 15,
-    gameChar_y - 15,
-    gameChar_x - 15,
-    gameChar_y - 15
-  );
+    gameChar_x, gameChar_y - 45,
+    gameChar_x + 15, gameChar_y - 15,
+    gameChar_x - 15, gameChar_y - 15);
 
   // character's left arm
   push();
   stroke(222, 184, 135);
   strokeWeight(4);
-  line(
-    gameChar_x + 4,
-    gameChar_y - 25,
-    gameChar_x - 4,
-    gameChar_y - 35
-  );
+  line(gameChar_x + 4, gameChar_y - 25, gameChar_x - 4, gameChar_y - 35);
   pop();
 
   // character's head
   fill(222, 184, 135);
-  ellipse(
-    gameChar_x,
-    gameChar_y - 50,
-    22,
-    22
-  );
+  ellipse(gameChar_x, gameChar_y - 50, 22, 22);
 
 	//Jumping right
 	stroke(100);
@@ -374,72 +227,36 @@ function draw()
 
   // character's hair
   fill(0);
-  rect(
-    gameChar_x - 12,
-    gameChar_y - 73,
-    24,
-    30
-  );
+  rect(gameChar_x - 12, gameChar_y - 73, 24, 30);
 
   // character's legs
   push();
   stroke(222, 184, 135);
   strokeWeight(4);
-  line(
-    gameChar_x - 5,
-    gameChar_y - 30,
-    gameChar_x - 1,
-    gameChar_y - 12
-  );
-
-  line(
-    gameChar_x + 5,
-    gameChar_y - 30,
-    gameChar_x + 9,
-    gameChar_y - 12
-  );
+  line(gameChar_x - 5, gameChar_y - 30, gameChar_x - 1, gameChar_y - 12);
+  line(gameChar_x + 5, gameChar_y - 30, gameChar_x + 9, gameChar_y - 12);
 
   // character's right arm
-  line(
-    gameChar_x + 15,
-    gameChar_y - 35,
-    gameChar_x + 4,
-    gameChar_y - 45);
-
+  line(gameChar_x + 15, gameChar_y - 35, gameChar_x + 4, gameChar_y - 45);
   pop();
 
   // character's body
   fill(139, 0, 0);
   triangle(
-    gameChar_x,
-    gameChar_y - 55,
-    gameChar_x + 15,
-    gameChar_y - 25,
-    gameChar_x - 15,
-    gameChar_y - 25
-  );
+    gameChar_x, gameChar_y - 55,
+    gameChar_x + 15, gameChar_y - 25,
+    gameChar_x - 15, gameChar_y - 25);
 
   // character's left arm
   push();
   stroke(222, 184, 135);
   strokeWeight(4);
-  line(
-    gameChar_x + 4,
-    gameChar_y - 35,
-    gameChar_x - 4,
-    gameChar_y - 45
-  );
+  line(gameChar_x + 4, gameChar_y - 35, gameChar_x - 4, gameChar_y - 45);
   pop();
 
   // character's head
   fill(222, 184, 135);
-  ellipse(
-    gameChar_x,
-    gameChar_y - 60,
-    22,
-    22
-  );
-
+  ellipse(gameChar_x, gameChar_y - 60, 22, 22);
 
 	//Jumping to the left
 	stroke(100);
@@ -455,74 +272,34 @@ function draw()
 
   // character's hair
   fill(0);
-  rect(
-    gameChar_x - 12,
-    gameChar_y - 73,
-    24,
-    30
-  );
+  rect(gameChar_x - 12, gameChar_y - 73, 24, 30);
 
 	// character's legs
 	push();
 	stroke(222, 184, 135);
 	strokeWeight(4);
-	line(
-	  gameChar_x - 5,
-	  gameChar_y - 30,
-	  gameChar_x - 9,
-	  gameChar_y - 12
-	);
-
-	line(
-	  gameChar_x + 5,
-	  gameChar_y - 30,
-	  gameChar_x + 1,
-	  gameChar_y - 12
-	);
+	line(gameChar_x - 5, gameChar_y - 30, gameChar_x - 9, gameChar_y - 12);
+	line(gameChar_x + 5, gameChar_y - 30, gameChar_x + 1, gameChar_y - 12);
 
 	// character's right arm
-	line(
-	  gameChar_x - 15,
-	  gameChar_y - 35,
-	  gameChar_x - 4,
-	  gameChar_y - 45
-	);
-
+	line(gameChar_x - 15, gameChar_y - 35, gameChar_x - 4, gameChar_y - 45);
 	pop();
 
 	// character's body
   fill(139, 0, 0);
   triangle(
-    gameChar_x,
-    gameChar_y - 55,
-    gameChar_x + 15,
-    gameChar_y - 25,
-    gameChar_x - 15,
-    gameChar_y - 25
-  );
+    gameChar_x, gameChar_y - 55,
+    gameChar_x + 15, gameChar_y - 25,
+    gameChar_x - 15, gameChar_y - 25);
 
   // character's left arm
-
   push();
 	stroke(222, 184, 135);
 	strokeWeight(4);
-
-  line(
-	  gameChar_x - 4,
-	  gameChar_y - 35,
-	  gameChar_x + 4,
-	  gameChar_y - 45);
-
+  line(gameChar_x - 4, gameChar_y - 35, gameChar_x + 4, gameChar_y - 45);
   pop();
 
   // character's head
   fill(222, 184, 135);
-  ellipse(
-    gameChar_x,
-    gameChar_y - 60,
-    22,
-    22
-  );
-
-
+  ellipse(gameChar_x, gameChar_y - 60, 22, 22);
 }
