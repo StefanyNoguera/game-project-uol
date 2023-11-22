@@ -37,7 +37,6 @@ function draw()
 
 	background(100,155,255); //fill the sky blue
 
-
 	noStroke();
 	fill(0,155,0);
 	rect(0, floorPos_y, width, height - floorPos_y); //draw some green ground
@@ -257,6 +256,12 @@ function draw()
 	///////////INTERACTION CODE//////////
 	//Put conditional statements to move the game character below here
 
+  if (isLeft) {
+    gameChar_x -= 5;
+  }
+  else if (isRight) {
+    gameChar_x += 5;
+  }
 }
 
 
