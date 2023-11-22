@@ -253,6 +253,17 @@ function draw()
     ellipse(gameChar_x, gameChar_y - 50, 22, 22);
 	}
 
+  // - Add an if statement within the draw function to detect when the character is  jumping above the ground.
+  // - HINT: gameChar_y is less than floorPos_y when this is happening.
+
+  if (gameChar_y < floorPos_y) {
+    gameChar_y += 5;
+    isFalling = true;
+  }
+  else {
+    isFalling = false;
+  }
+
 	///////////INTERACTION CODE//////////
 	//Put conditional statements to move the game character below here
 
@@ -280,7 +291,9 @@ function keyPressed()
     isRight = true;
   }
   else if (keyCode == 87) {
-    gameChar_y -= 100;
+    if (!isFalling) {
+      gameChar_y -= 100;
+    }
   }
 }
 
