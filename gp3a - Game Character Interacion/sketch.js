@@ -103,7 +103,13 @@ function keyReleased()
 {
 	// if statements to control the animation of the character when
 	// keys are released.
-
 	console.log("keyReleased: " + key);
 	console.log("keyReleased: " + keyCode);
+
+  if (keyCode == 65) {
+    isLeft = false;
+  }
+  else if (keyCode == 68) {
+    isRight = false;
+  }
 }
