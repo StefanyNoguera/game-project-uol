@@ -87,10 +87,16 @@ function keyPressed()
 {
 	// if statements to control the animation of the character when
 	// keys are pressed.
-
 	//open up the console to see how these work
 	console.log("keyPressed: " + key);
 	console.log("keyPressed: " + keyCode);
+
+  if (keyCode == 65) {
+    isLeft = true;
+  }
+  else if (keyCode == 68) {
+    isRight = true;
+  }
 }
 
 function keyReleased()
