@@ -279,6 +279,9 @@ function keyPressed()
   else if (keyCode == 68) {
     isRight = true;
   }
+  else if (keyCode == 87) {
+    gameChar_y -= 100;
+  }
 }
 
 function keyReleased()
