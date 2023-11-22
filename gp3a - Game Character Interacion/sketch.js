@@ -23,6 +23,11 @@ function setup()
 	floorPos_y = height * 3/4;
 	gameChar_x = width/2;
 	gameChar_y = floorPos_y;
+
+  isLeft = false;
+  isRight = false;
+  isFalling = false;
+  isPlummeting = false;
 }
 
 function draw()
