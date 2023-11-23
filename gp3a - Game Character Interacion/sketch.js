@@ -30,7 +30,7 @@ function setup()
   isFalling = false;
   isPlummeting = false;
 
-  collectable = {x_pos: 100, y_pos: 100, size: 50, isFound: false};
+  collectable = {x_pos: 100, y_pos: floorPos_y, size: 50, isFound: false};
 }
 
 function draw()
@@ -45,17 +45,21 @@ function draw()
 	rect(0, floorPos_y, width, height - floorPos_y); //draw some green ground
 
   // collectable
-  fill(170, 0, 0); // Red for the apple
-  ellipse(collectable.x_pos - 6, collectable.y_pos, collectable.size - 22, collectable.size - 20);
-  ellipse(
-    collectable.x_pos + 6, collectable.y_pos, collectable.size - 22, collectable.size - 20);
-  fill(147, 81, 22); // Brown for the stem
-  rect(collectable.x_pos - 1, collectable.y_pos - 23, collectable.size - 47, collectable.size - 37);
-  fill(0, 100, 0); // Green for the leaf
-  triangle(
-    collectable.x_pos - 16, collectable.y_pos - 25,
-    collectable.x_pos, collectable.y_pos - 15,
-    collectable.x_pos, collectable.y_pos - 20);
+  if(dist(gameChar_x, gameChar_y, collectable.x_pos, collectable.y_pos) < 20) {
+    collectable.isFound = true;
+  }
+  if (collectable.isFound == false) {
+    fill(170, 0, 0); // Red for the apple
+    ellipse(collectable.x_pos - 6, collectable.y_pos, collectable.size - 22, collectable.size - 20);
+    ellipse(collectable.x_pos + 6, collectable.y_pos, collectable.size - 22, collectable.size - 20);
+    fill(147, 81, 22); // Brown for the stem
+    rect(collectable.x_pos - 1, collectable.y_pos - 23, collectable.size - 47, collectable.size - 37);
+    fill(0, 100, 0); // Green for the leaf
+    triangle(
+      collectable.x_pos - 16, collectable.y_pos - 25,
+      collectable.x_pos, collectable.y_pos - 15,
+      collectable.x_pos, collectable.y_pos - 20);
+  }
 
 	//draw the canyon
 
