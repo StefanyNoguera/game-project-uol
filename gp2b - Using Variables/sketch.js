@@ -102,8 +102,6 @@ function draw()
   ellipse(cloud.x_pos - distance2, cloud.y_pos, ellipseSize2, ellipseSize2);
   ellipse(cloud.x_pos + distance2, cloud.y_pos, ellipseSize2, ellipseSize2);
 
-
-
   // A Tree
   fill(139, 69, 19);
   rect(treePos_x, treePos_y, 50, 145);
@@ -116,30 +114,18 @@ function draw()
   ellipse(treePos_x + 65, treePos_y - 82 , 100, 100);
   ellipse(treePos_x + 65, treePos_y - 42, 100, 100);
 
-
   // Apple
   fill(170, 0, 0); // Red for the apple
+  ellipse(collectable.x_pos - 6, collectable.y_pos, collectable.size - 22, collectable.size - 20);
   ellipse(
-    collectable.x_pos - 6, collectable.y_pos,
-    collectable.size - 22, collectable.size - 20
-  );
-  ellipse(
-    collectable.x_pos + 6, collectable.y_pos,
-    collectable.size - 22, collectable.size - 20
-  );
-
+    collectable.x_pos + 6, collectable.y_pos, collectable.size - 22, collectable.size - 20);
   fill(147, 81, 22); // Brown for the stem
-  rect(
-    collectable.x_pos - 1, collectable.y_pos - 23,
-    collectable.size - 47, collectable.size - 37
-  );
-
+  rect(collectable.x_pos - 1, collectable.y_pos - 23, collectable.size - 47, collectable.size - 37);
   fill(0, 100, 0); // Green for the leaf
   triangle(
     collectable.x_pos - 16, collectable.y_pos - 25,
     collectable.x_pos, collectable.y_pos - 15,
-    collectable.x_pos, collectable.y_pos - 20
-  );
+    collectable.x_pos, collectable.y_pos - 20);
 
   // Character
   // character's hair
