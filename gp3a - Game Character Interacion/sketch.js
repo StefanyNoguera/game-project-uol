@@ -301,10 +301,10 @@ function draw()
 	///////////INTERACTION CODE//////////
 	//Put conditional statements to move the game character below here
 
-  if (isLeft) {
+  if (isLeft && isPlummeting == false) {
     gameChar_x -= 5;
   }
-  else if (isRight) {
+  else if (isRight && isPlummeting == false) {
     gameChar_x += 5;
   }
 }
@@ -324,7 +324,7 @@ function keyPressed()
   else if (keyCode == 68) {
     isRight = true;
   }
-  else if (keyCode == 87) {
+  else if (keyCode == 87 && isPlummeting == false) {
     if (!isFalling) {
       gameChar_y -= 100;
     }
